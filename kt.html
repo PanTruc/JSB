@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="form">
+        <h2>Đăng nhập</h2>
+        <form action="post" method="post" name="đăng ký">
+        
+        <input type="text" name="username" placeholder="Nhập tên tài khoản..." />
+        <input type="password" name="password" placeholder="Nhập mật khẩu tài khoản..." />
+        <input type="text" name="email" placeholder="Nhập tên email..." />
+        <input type="text" name="phone" placeholder="Nhập số điện thoại..." />
+        <input type="checkbox" id="checkbox" name="checkbox"><label class="checkbox-text">Nhớ tài khoản lần </label>
+        <input type="submit" name="submit" value="Đăng nhập" id="sumit" />
+        <a href="./kt2.html">Quên mật khẩu</a>
+        </form>
+        </div>
+</body>
+</html>
+<style>
+    body {
+    padding: 60px;
+    }
+    * {
+    margin: 0;
+    padding: 0;
+    }
+    .form {
+    width: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 55px 55px 37px;
+    background: #9152f8;
+    background: -webkit-linear-gradient(top,#75ff95,#3f9e5b);
+    background: -o-linear-gradient(top,#75ff95,#3f9e5b);
+    background: -moz-linear-gradient(top,#75ff95,#3f9e5b);
+    background: linear-gradient(top,#75ff95,#3f9e5b);
+    text-align: center;
+    margin:0px auto;
+    }
+    .form h2 {
+    font-size: 30px;
+    color: #fff;
+    line-height: 1.2;
+    text-align: center;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 30px;
+    }
+    
+    .form input[type=text] {
+    font-family: Poppins-Regular;
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.2;
+    display: block;
+    width: calc(100% - 10px);
+    height: 45px;
+    background: 0 0;
+    padding: 10px 0;
+    border-bottom: 2px solid rgba(255,255,255,.24)!important;
+    border: 0;
+    outline: 0;
+    }
+    .form input[type=password] {
+    font-family: Poppins-Regular;
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.2;
+    display: block;
+    width: calc(100% - 10px);
+    height: 45px;
+    background: 0 0;
+    padding: 10px 0;
+    border-bottom: 2px solid rgba(255,255,255,.24)!important;
+    border: 0;
+    outline: 0;
+    }
+    .form input[type=email] {
+    font-family: Poppins-Regular;
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.2;
+    display: block;
+    width: calc(100% - 10px);
+    height: 45px;
+    background: 0 0;
+    padding: 10px 0;
+    border-bottom: 2px solid rgba(255,255,255,.24)!important;
+    border: 0;
+    outline: 0;
+    }
+    .form input[type=phone] {
+    font-family: Poppins-Regular;
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.2;
+    display: block;
+    width: calc(100% - 10px);
+    height: 45px;
+    background: 0 0;
+    padding: 10px 0;
+    border-bottom: 2px solid rgba(255,255,255,.24)!important;
+    border: 0;
+    outline: 0;
+    }
+    .form input[type=submit] {
+font-size: 16px;
+color: rgb(228, 224, 20);
+line-height: 1.2;
+padding: 0 20px;
+min-width: 120px;
+height: 50px;
+border-radius: 25px;
+background: #fff;
+position: relative;
+z-index: 1;
+border: 0;
+outline: 0;
+display: block;
+margin: 30px auto;
+}
+:hover.sumit{
+    color: #60aa0b;
+}
+    #checkbox {
+        display: inline-block;
+        margin-right: 10px;
+        margin-top: 5px;
+    }
+    </style>
+    <script>
+       function send(){
+        var arr = document.getElementsByTagName('input');
+        var username = arr['Son','Anh','Em'].value;
+        var password = arr['12345','1234','123456'].value;
+        var email = arr['nick1@gmail.com','nick2@gmail.com','nick3@gmail.com'].value;
+        var phone = arr['0987654321','0123456789','9876543210'].value;
+        if(username == ''|| password == '' || email == '' || phone == '') {
+            window.Location="https://www.youtube.com/";
+        }
+       localStorage.setItem('username');
+       localStorage.setItem('password');
+       localStorage.setItem('email');
+       localStorage.setItem('phone');
+       }
+    </script>
